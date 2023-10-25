@@ -7,14 +7,14 @@ O objetivo é criar uma consulta SQL que permita replicar os resultados de uma t
 Imagem da tabela original:
 <img src="/upload.photos/tabela.original.png">
 
-Essa tabela contém uma análise das vendas de música, mostrando o total de vendas (faturamento), a porcentagem de vendas por gênero e a soma acumulada da porcentagem de vendas por gênero para cada artista. 
+A tabela contém uma análise das vendas de música, mostrando o total de vendas (faturamento), a porcentagem de vendas por gênero e a soma acumulada da porcentagem de vendas por gênero para cada artista. 
 
 A consulta deve retornar os dez primeiros resultados, ordenados por gênero em ordem ascendente e por porcentagem de vendas em ordem descendente.
 ## Solução proposta
 O script SQL neste repositório é dividido em quatro partes:
-- **sales_data:** Esta parte da consulta reúne os dados de vendas por artista e gênero. Ela junta várias tabelas para calcular o total de vendas para cada combinação de artista e gênero.
-- **total_sales:** Esta parte da consulta calcula o total de vendas para cada gênero.
-- **sales_percentage:** Esta parte da consulta calcula a porcentagem de vendas para cada combinação de artista e gênero.
+- **sales_data:** Reúne os dados de vendas por artista e gênero. Ela junta várias tabelas para calcular o total de vendas para cada combinação de artista e gênero.
+- **total_sales:** Calcula o total de vendas para cada gênero.
+- **sales_percentage:** Calcula a porcentagem de vendas para cada combinação de artista e gênero.
 - **Consulta principal:** Seleciona os dados finais a serem retornados. Ela calcula a soma acumulada da porcentagem de vendas por gênero e ordena os resultados.
 ## Resultado
 Imagem da tabela: 
